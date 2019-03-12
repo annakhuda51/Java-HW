@@ -11,6 +11,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the length of array: ");
         int length = sc.nextInt();
+        if(length <= 0){
+            System.out.print("Enter the number bigger than 0: " );
+            length = sc.nextInt();
+        }
         task1(length);
         task2(length);
         task3(length);
@@ -19,6 +23,10 @@ public class Main {
         extraTask1(length);
         System.out.print("\n\nEnter size of 2nd array for extra task 2: ");
         int length2 = sc.nextInt();
+        if(length2 <= 0){
+            System.out.print("Enter the number bigger than 0: " );
+            length2 = sc.nextInt();
+        }
         extraTask2(length, length2);
         extraTask3(length);
 
